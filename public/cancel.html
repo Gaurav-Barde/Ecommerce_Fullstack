@@ -6,6 +6,16 @@
   <title>Cancelled</title>
 </head>
 <body>
-  <h1>Sorry! Something went wrong.</h1>
+  <div class="p-4">
+    <h1 class="font-semibold text-3xl text-center mt-6">
+      Success! Thank You for Your Purchase.
+    </h1>
+    <button class="border-b-2 border-blue-600 mt-2" onclick="redirectToHome()">
+      Back to Store
+    </button>
+  </div>
+  <script>
+    const redirectToHome = () => window.location.assign("https://ecommerce-fullstack.onrender.com");
+  </script>
 </body>
 </html>
