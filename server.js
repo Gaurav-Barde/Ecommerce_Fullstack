@@ -20,8 +20,8 @@ app.post("/checkout", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: lineItems,
     mode: "payment",
-    success_url: "https://ecommerce-fullstack.onrender.com/public/success",
-    cancel_url: "https://ecommerce-fullstack.onrender.com/public/cancel",
+    success_url: "https://ecommerce-fullstack.onrender.com/success.html",
+    cancel_url: "https://ecommerce-fullstack.onrender.com/cancel.html",
   });
 
   res.send(
