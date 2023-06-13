@@ -6,12 +6,17 @@
   <title>Success</title>
 </head>
 <body>
-  <h1>Success! Thank You for Your Purchase.</h1>
-  <!-- <button
+  <h1 className="font-semibold text-3xl text-center mt-6">
+    Success! Thank You for Your Purchase.
+  </h1>
+  <button
     className="border-b-2 border-blue-600 mt-2"
-    onClick={() => window.location.assign("http://localhost:3000")}
+    onClick={redirectToHome}
   >
     Back to Store
-  </button> -->
+  </button>
+  <script>
+    const redirectToHome = () => window.location.assign("https://ecommerce-fullstack.onrender.com");
+  </script>
 </body>
 </html>
